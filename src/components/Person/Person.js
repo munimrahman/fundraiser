@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 const favoriteIcon = <FontAwesomeIcon icon={faHeart} />
 
+// This Component is uded for showing individual donors in main component
+
 const Person = (props) => {
     const { id, name, age, img, profession, amount, email } = props.person;
     return (

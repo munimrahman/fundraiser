@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css'
 
+// Site Header Component
+
 const Header = () => {
     return (
         <div>

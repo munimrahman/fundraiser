@@ -1,6 +1,8 @@
 import React from 'react';
 import './SelectedPerson.css'
 
+// this is the component for showing persons who are added to cart
+
 const SelectedPerson = (props) => {
     const { img, name } = props.singlePerson;
     return (

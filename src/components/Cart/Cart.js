@@ -14,6 +14,7 @@ const Cart = (props) => {
 
     return (
         <div className="border rounded shadow">
+            {/* show total added person and total donation amount */}
             <div className="p-3">
                 <h3 className="text-center">Donation Cart</h3>
                 <h5>Total Added: {cart.length}</h5>
@@ -22,6 +23,7 @@ const Cart = (props) => {
                     <button className="btn btn-primary shadow-none rounded-pill">{donationIcon} Ask to Donate</button>
                 </div>
             </div>
+            {/* show selected donar */}
             {
                 cart.map((singlePerson, index) => <SelectedPerson
                     key={index}
