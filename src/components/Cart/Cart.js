@@ -6,7 +6,7 @@ const donationIcon = <FontAwesomeIcon icon={faDonate} />
 
 const Cart = (props) => {
     const { cart } = props;
-    // total calc
+    // total donation amount calculation
     let total = 0;
     for (const person of cart) {
         total += person.amount;

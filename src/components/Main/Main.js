@@ -11,7 +11,7 @@ const Main = () => {
             .then(res => res.json())
             .then(data => setPersons(data))
     }, [])
-    const clickHandler = person => {
+    const addToFavClickHandler = person => {
         setCart([...cart, person])
     }
     return (
@@ -22,7 +22,7 @@ const Main = () => {
                         persons.map(person => <Person
                             key={person.id}
                             person={person}
-                            clickHandler={clickHandler}
+                            addToFavClickHandler={addToFavClickHandler}
                         ></Person>)
                     }
                 </div>

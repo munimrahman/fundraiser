@@ -3,7 +3,6 @@ import './SelectedPerson.css'
 
 const SelectedPerson = (props) => {
     const { img, name } = props.singlePerson;
-    // console.log(props.id);
     return (
         <div className="row selected-person d-flex align-items-center m-1 border rounded">
             <div className="col-5 p-0">
